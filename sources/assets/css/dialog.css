@@ -1,0 +1,35 @@
+.ui-dialog {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  top: 100vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0s 0.5s, opacity 0.5s, visibility 0s 0.5s;
+}
+.ui-dialog.is-active {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: top 0s, opacity 0.5s, visibility 0s;
+}
+.dialog-contents {
+  box-sizing: border-box;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 24px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  overflow: auto;
+}
+.ui-dialog .btn-close {
+  padding: 20px;
+}

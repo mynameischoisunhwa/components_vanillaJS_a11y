@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dialog modal</title>
+  <link rel="stylesheet" href="../assets/css/combined.css">
+  <link rel="stylesheet" href="../assets/fontawesome/combined.css">
+  <script src="dialog-modal.js"></script>
+</head>
+<body>
+  <div class="guide" id="guid">
+    <a href="#">dialog modal 이전 포커서블 요소</a>
+    
+    <div class="component">
+      <button class="btn-solid" id="button01" > 
+        <i class="fa-solid fa-angle-left"></i>
+        <span>open dialog01</span>
+      </button>
+
+      <button class="btn-solid" id="button02"> 
+        <i class="fa-solid fa-angle-left"></i>
+        <span>open dialog02</span>
+      </button>
+    </div>    
+
+    <!-- example -->
+    <!-- 
+    <div 
+      id="dialog01"
+      class="ui-dialog"
+      role="dialog"
+      aria-labelledby="dialog01-label"
+      aria-modal="true"
+      >
+      <div class="dialog-contents">
+        <h2 id="dialog01-label" tabindex="-1">dialog01-label</h2>  
+        <p>dialog contents dialog contents dialog contents dialog contents</p>
+        <div>
+          <input type="text" placeholder="write any text">
+        </div>
+        <div>
+          <input type="text" placeholder="write any text">
+        </div>
+        <hr style="margin: 100px">
+        <br>
+        <hr style="margin: 100px">
+        <br>
+        <button>open dialog02</button>
+        <button class="btn-close"><i class="fa-solid fa-close"></i><span class="wa-hidden">닫기</span></button>
+      </div>
+    </div>     
+    --> 
+    
+    <!-- dialog 01 -->
+    <div 
+      id="dialog01"
+      class="ui-dialog"
+    >
+      <div class="dialog-contents">
+        <h2 class="dialog-title wa-title">dialog01-label</h2>  
+        <p>dialog contents dialog contents dialog contents dialog contents</p>
+        <div>
+          <input type="text" placeholder="write any text">
+          <div>
+            <button class="test">test</button>
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="write any text">
+        </div>
+        <hr style="margin: 100px">
+        <br>
+        <hr style="margin: 100px">
+        <br>
+        <button id="button03">button03</button>
+        <button class="btn-close"><i class="fa-solid fa-close"></i><span class="wa-hidden">닫기</span></button>
+      </div>
+    </div>    
+    
+    <!-- dialog 02 -->
+    <div 
+      id="dialog02"
+      class="ui-dialog"
+    >
+      <div class="dialog-contents">
+        <h2 class="dialog-title wa-title">dialog02-label</h2>  
+        <p>dialog contents dialog contents dialog contents dialog contents</p>
+        <div>
+          <input type="text" placeholder="write any text">
+          <div>
+            <button class="test">test</button>
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="write any text">
+        </div>
+        <button class="btn-close"><i class="fa-solid fa-close"></i><span class="wa-hidden">닫기</span></button>
+      </div>
+    </div>    
+  </div>    
+
+  
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      console.log("=== DOMContentLoaded dialog-modal page ===");
+      
+      const uiDialogs = document.querySelectorAll(".ui-dialog");
+      
+      // 이건 그냥 각자 취향대로, 개별선언 하든 배열로 만들든 맘대로
+      let dialogs = [];
+      uiDialogs.forEach((dialog, i) => {
+        dialogs[dialog.id] = new Dialog(dialog);
+      });
+
+      // 열고 닫고 
+      document.querySelector("#button01").onclick = (e) => {
+        dialogs.dialog01.openDialog(e);
+      };
+      document.querySelector("#button02").onclick = (e) => {
+        dialogs.dialog02.openDialog(e);
+      };
+      document.getElementById("button03").onclick = (e) => {
+        dialogs.dialog02.openDialog(e);
+      };
+    });
+
+  </script>
+</body>
+</html>

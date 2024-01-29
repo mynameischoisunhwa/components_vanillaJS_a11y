@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>form -input</title>
+  <link rel="stylesheet" href="../assets/css/combined.css">
+  <link rel="stylesheet" href="../assets/fontawesome/combined.css">
+  <script src="./select.js"></script>
+
+</head>
+
+<body>
+  <div class="guide" id="guid">
+    
+    <div class="title">form - checkbox switch</div>
+    <div class="component">
+      <div>
+        <div class="form-select" data-status="">
+          <label for="formSelectSample01">선택 타이틀</label>
+          <div class="form-select-inner">
+            <!-- custom combobox -->
+            <!-- <div 
+              tabindex="0"
+              role="combobox"
+              aria-expanded="false"
+              aria-autocomplete="list"
+              aria-controls="listbox01"
+              aria-activedescendant="opt01"
+              aria-haspopup="listbox"
+              aria-labelledby="formSelectSample01"
+              class="ui-combobox"
+            >
+              <span>option1</span>
+              <i class="fas fa-arrow-down"></i>
+            </div> -->
+            
+            <!-- listbox -->
+            <!-- aria-disabled="false" -->
+            <!-- <div>
+              <ul 
+                id="listbox01" 
+                tabindex="-1" 
+                role="listbox" 
+                aria-hidden="true"
+                >
+                <li><span role="option" tabindex="1">option</span></li>
+              </ul>
+            </div> -->
+
+            <!-- select tag -->
+            <select name="formSelectSample01" id="formSelectSample01">
+              <option id="opt01" value="">11최초 메세지</option>
+              <option value="">선택 option 1</option>
+              <option value="">선택 option 2</option>
+              <option value="">선택 option 3</option>
+              <option value="">선택 option 4</option>
+            </select>
+          </div>
+          <em class="validation">Message</em>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="form-select" data-status="">
+          <label for="formSelectSample02">선택 타이틀</label>
+          <div class="form-select-inner">
+            <!-- select tag -->
+            <select name="formSelectSample02" id="formSelectSample02">
+              <option id="opt01" value="">22최초 메세지</option>
+              <option value="">선택 option 1</option>
+              <option value="">선택 option 2</option>
+              <option value="">선택 option 3</option>
+              <option value="">선택 option 4</option>
+            </select>
+          </div>
+          <em class="validation">Message</em>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+  </div>
+
+</body>
+
+</html>

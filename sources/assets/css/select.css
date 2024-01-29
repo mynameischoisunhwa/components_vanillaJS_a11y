@@ -1,0 +1,29 @@
+.form-select {
+  height: 200px;
+}
+.form-select .ui-combobox {
+  cursor: pointer;
+  border: 2px solid blue;
+}
+.form-select .ui-listbox {
+  cursor: pointer;
+
+  box-shadow: 0 0 0 1px black;
+  display: none;
+}
+
+.form-select .ui-listbox.is-active {
+  display: block;
+}
+.form-select .ui-listbox li {
+  display: flex;
+  width: 100%;
+}
+.form-select .ui-option {
+  padding: 8px 4px;
+  display: flex;
+  width: 100%;
+}
+.form-select .ui-option.is-active {
+  background-color: aquamarine;
+}

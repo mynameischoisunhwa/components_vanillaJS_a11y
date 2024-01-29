@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tab</title>
+  <link rel="stylesheet" href="../assets/css/combined.css">
+  <link rel="stylesheet" href="../assets/fontawesome/combined.css">
+  <script src="./tab.js"></script>
+
+</head>
+
+<body>
+  <div class="guide" id="guid">
+    <a href="#">탭 이전 포커서블 요소</a>
+    
+    <div class="title">tab</div>
+    <div class="component">
+      <div class="ui-tab type-bar">
+        <div class="tablabel">tab title</div>
+        
+        <!-- <div class="tablist" role="tablist"> -->
+        <div class="tablist">
+          <div>
+            <!-- <a 
+              href="#target01" 
+              id="tab01" 
+              class="tab is-active"
+              role="tab" 
+              aria-selected="true" 
+              aria-controls="tabpanel01" 
+              aria-expanded="true"
+              >홈</a> -->
+            <a 
+              href="#tabpanel01_01" 
+              id="tab01_01" 
+              class="tab is-active"
+              >홈</a>
+            <a 
+              href="#tabpanel01_02" 
+              id="tab01_02" 
+              class="tab"
+              >메뉴명1</a>
+            <a 
+              href="#tabpanel01_03" 
+              id="tab01_03" 
+              class="tab"
+              >메뉴명2</a>
+          </div>
+        </div>
+        
+        <div class="tabpanels">
+          <!-- <div 
+            id="tabpanel01" 
+            class="tabpanel is-active" 
+            role="tabpanel" 
+            aria-labelledby="tab01"
+            tabindex="0"      
+            aria-hidden="false"
+          >
+            1번 컨텐츠
+          </div> -->
+          <div 
+            id="tabpanel01_01" 
+            class="tabpanel is-active" 
+            role="tabpanel" 
+            aria-labelledby="tab01"
+            tabindex="0"      
+            aria-hidden="false"
+          >
+            1번 컨텐츠
+          </div>
+          <div 
+            id="tabpanel01_02" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab02"
+            tabindex="0"  
+            aria-hidden="true"
+          >
+            2번 컨텐츠
+            <a href="#">test#</a>
+          </div>
+          <div 
+            id="tabpanel01_03" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab03"
+            tabindex="0"
+            aria-hidden="true"
+          >  
+            3번 컨텐츠
+          </div>
+        </div>
+      </div>
+      <div class="ui-tab">
+        <div class="tablabel">tab title</div>
+        
+        <div class="tablist">
+          <div>
+            <button
+              type="button" 
+              id="tab02_01" 
+              class="tab is-active"
+              >홈</button>
+            <button 
+              type="button" 
+              id="tab02_02" 
+              class="tab"
+              >메뉴명1 메뉴명1 메뉴명1 메뉴명1</button>
+            <button 
+              type="button" 
+              id="tab02_03" 
+              class="tab"
+              >메뉴명2</button>
+            <button 
+              type="button" 
+              id="tab02_04" 
+              class="tab"
+              >메뉴명3</button>
+            <button 
+              type="button" 
+              id="tab02_05" 
+              class="tab"
+              >메뉴명4 메뉴명4</button>
+          </div>
+        </div>
+        
+        <div class="tabpanels">
+          <div 
+            id="tabpanel02_01" 
+            class="tabpanel is-active" 
+            role="tabpanel" 
+            aria-labelledby="tab01"
+            tabindex="0"      
+            aria-hidden="false"
+          >
+            home 컨텐츠
+            <a href="#">test#</a>
+          </div>
+          <div 
+            id="tabpanel02_02" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab02"
+            tabindex="0"  
+            aria-hidden="true"
+          >
+            1번 컨텐츠
+          </div>
+          <div 
+            id="tabpanel02_03" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab03"
+            tabindex="0"
+            aria-hidden="true"
+          >  
+            2번 컨텐츠
+          </div>
+          <div 
+            id="tabpanel02_04" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab04"
+            tabindex="0"
+            aria-hidden="true"
+          >  
+            3번 컨텐츠
+          </div>
+          <div 
+            id="tabpanel02_05" 
+            class="tabpanel"
+            role="tabpanel" 
+            aria-labelledby="tab05"
+            tabindex="0"
+            aria-hidden="true"
+          >  
+            4번 컨텐츠
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

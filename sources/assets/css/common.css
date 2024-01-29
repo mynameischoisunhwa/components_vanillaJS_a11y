@@ -1,0 +1,12 @@
+.wa-hidden {
+  position: absolute; /* to set clip */
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0px; /* 패딩 준다고 오버플로 히든 적용 안됨 */
+  margin: 0px; /* 마진 준다고 오버플로 히든 적용 안됨 그냥 밀려나는 거임 */
+  border: 0 none;
+  clip: rect(0, 0, 0, 0); /* top 부터 시계 방향 */
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading</title>
+  <link rel="stylesheet" href="../assets/fontawesome/combined.css">
+  <link rel="stylesheet" href="../assets/css/combined.css">
+  <script src="./loading.js"></script>
+</head>
+<body>
+  <!-- 스크립트에서 넣어줄 소스 -->
+  <!-- <div>
+    image loading ..
+  </div>
+  <div class="page-loader loading-image-rotate">
+    <div class="animation">
+      <span class="wa-hidden">로딩중</span>
+    </div>
+    <div class="page-loader-msg">text</div>
+  </div> -->
+
+  <button class="btn-line" 
+    onclick="(() => {
+      GF_Loader.show(1000);
+    })()"><span>loading 1s</span></button>
+  <br>
+  <br>
+  <button class="btn-line btnLoaderTrigger"><span>show loading 2s</span></button>
+
+  <button class="btn-line btnLoaderHide" style="position: relative;z-index: 101;"><span>hide loading 2s</span></button>
+
+  <br>
+  <br>
+  <div style="background-color: black;">
+    <div class="loader-cloud">
+  
+    </div>
+    <div class="radial"></div>
+
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const btnShow = document.querySelector('.btnLoaderTrigger');
+      btnShow.onclick = () => {
+        GF_Loader.show(2000);
+      }
+      
+      const btnHide = document.querySelector('.btnLoaderHide');
+      btnHide.onclick = () => {
+        GF_Loader.hide();
+      }
+    })
+  </script>
+</body>
+</html>

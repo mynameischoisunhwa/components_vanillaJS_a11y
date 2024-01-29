@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>button</title>
+  <link rel="stylesheet" href="../assets/css/combined.css">
+  <link rel="stylesheet" href="../assets/fontawesome/combined.css">
+</head>
+
+<body>
+  <div class="guide" id="guid">
+
+    <div class="title">버튼 solid, line</div>
+    <div class="desc">
+      <p>button, a 태그 모두 동일한 스타일 표현 되어야 함.</p>
+    </div>
+
+    <div class="component">
+      <button class="btn-solid" id="button">
+        <i class="fa-solid fa-angle-left"></i>
+        <span>solid button</span>
+      </button>
+      <button class="btn-solid" disabled="disabled"><span>solid button -disabled</span></button>
+      <br>
+
+      <button class="btn-line"><span>line button</span></button>
+      <button class="btn-line" disabled><span>line button -disabled</span></button>
+      <br>
+
+      <!-- #으로 하면 스크롤 위로 올라감, javascript:; or javascript:void(0); 넣어주기 -->
+      <a href="javascript:void(0);" class="btn-solid" role="button"><span>solid a</span></a>
+      <a href="javascript:void(0);" class="btn-solid is-disabled" role="button"><span>solid a -is-disabled</span></a>
+      <br>
+      <a href="javascript:;" class="btn-line" role="button"><span>line a</span></a>
+      <a href="javascript:;" class="btn-line is-disabled" role="button"><span>line a -is-disabled</span></a>
+    </div>
+
+    <div class="title">버튼 텍스트</div>
+    <div class="component">
+      <div>
+        <button class="btn-text"><span>text button</span></button>
+        <button class="btn-text">
+          <span><u>text button</u></span><i class="fa-solid fa-angle-right"></i>
+        </button>
+        <button class="btn-text" disabled><span><u>text button -disabled</u></span></button>
+        <br>
+
+        <a href="javascript:;" class="btn-text" role="button"><span>text a</span></a>
+        <a href="javascript:;" class="btn-text" role="button"><span><u>text a</u></span></a>
+        <a href="javascript:;" class="btn-text is-disabled" role="button"><span><u>text a -is-disabled</u></span></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

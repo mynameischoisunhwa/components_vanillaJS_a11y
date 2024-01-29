@@ -1,0 +1,251 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  font-family: inherit;
+  vertical-align: baseline;
+  font-size: inherit;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+dl,
+/* <menu>: sementic alternative to ul but treated by browser and accessibility tree like <ul>  */
+menu,
+li {
+  list-style: none;
+}
+
+/* <input>: vertical-align: middle, font-family: arial, border: 2px, padding 1px 2px */
+/* <textarea>: vertical-align: top, font-family: monospace, border: 1px, padding: 2px */
+/* <select>: vertical-align: middle, font-family: arial, border: 1px*/
+input,
+select,
+textarea,
+button {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: border-box;
+}
+
+/* <button>: vertical-align: middle, font-family: arial, border: 2px, padding: 1px 6px, backgroundColor: rgb(240, 240, 240) */
+button {
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  font-family: inherit;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* appearance: none | auto */
+/* TODO: 좀 더 자세히 디바이스 별로 확인 필요  */
+/* iOS 폼 요소들의 둥근 테두리, 그림자 효과 제거  */
+/* select 필드의 기본 화살표 모양 삭제 또는 대체  */
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* 아이폰이 없네..  */
+/* //IPHONE */
+input:disabled,
+textarea:disabled {
+  opacity: 1;
+  -webkit-text-fill-color: inherit;
+}
+
+/* IE 버렸음 */
+/* select::-ms-expand {
+  display: none;
+}  */
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+::before,
+::after,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  max-width: 100%;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+sup {
+  font-size: small;
+  vertical-align: text-top;
+}
+sub {
+  font-size: small;
+  vertical-align: text-bottom;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table caption {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* HTML5 for older browsers */
+/* 이젠 의미가 없는 것 같다. */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+} */
+/* section,
+main {
+  display: block;
+} */
+
+/* strong,
+em {
+  font-weight: normal;
+} */
+
+/* blockquote,
+q {
+  quotes: none;
+} */

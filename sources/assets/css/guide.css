@@ -1,0 +1,18 @@
+.guide {
+  padding: 12px;
+  height: 100%;
+  overflow: auto;
+}
+.component {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 100%;
+  margin-top: 4px;
+}
+.guide .title {
+  margin-top: 4px;
+}
+.guide .desc {
+  margin-top: 8px;
+}

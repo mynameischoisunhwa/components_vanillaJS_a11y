@@ -1,0 +1,17 @@
+/* color */
+/* font color */
+/* bg color */
+/* dim color */
+/* z-index lebel */
+/* space between */
+
+:root {
+  --color-primary: #07a300;
+  --color-secondary: rgb(162, 0, 255);
+  --color-tertiary: rgb(89, 0, 255);
+  --color-black: rgb(13, 3, 31);
+  --color-white: #fff;
+  --color-lightGray: #888;
+  --color-gray: #555;
+  --color-primary-disabled: #3d9439;
+}

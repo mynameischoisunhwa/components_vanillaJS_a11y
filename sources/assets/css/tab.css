@@ -1,0 +1,44 @@
+.ui-tab {
+  border: 1px solid black;
+}
+.tablistLabel {
+  margin-bottom: 12px;
+}
+.tablist {
+  display: flex;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.tablist div {
+  position: relative;
+  display: flex;
+  column-gap: 8px;
+  flex-wrap: nowrap;
+}
+.tablist .tab {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: 20px;
+  justify-content: center;
+  padding: 4px 8px;
+  background-color: lightgreen;
+}
+.tablist .tab.is-active {
+  background-color: green;
+}
+.tabpanel {
+  display: none;
+}
+.tabpanel.is-active {
+  display: block;
+}
+.ui-tab .bar {
+  height: 2px;
+  width: 30px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* transition: left 0.2s, transform 0.3s; */
+}
